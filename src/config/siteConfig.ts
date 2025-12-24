@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "AIQAAN",         // Change anytime
+  name: "voactive",         // Change anytime
   supportEmail: "support@aiqaan.com", // Change anytime
   maxThoughtName:45,
   maxThought:1200,

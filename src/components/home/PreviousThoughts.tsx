@@ -10,6 +10,7 @@ interface Thought {
     id: number;
     name: string | null;
     thought: string;
+    prompt: number | string;
     created_at: string;
     guest_id: string;
 }
