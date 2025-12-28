@@ -7,6 +7,9 @@ import { Moon, Sun, Home } from "lucide-react";
 export default function Navbar() {
   const { effectiveTheme, toggleTheme, colors } = useTheme();
 
+  const mobileTap =
+    "transition active:opacity-50 active:scale-95 md:active:opacity-100 md:active:scale-100";
+
   return (
     <header
       className="w-full border-b backdrop-blur-md transition-colors"
@@ -21,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 font-semibold hover:opacity-80 transition"
+            className={`flex items-center gap-2 font-semibold hover:opacity-80 ${mobileTap}`}
             style={{ color: colors.text }}
           >
             <Home size={18} />
@@ -55,15 +58,20 @@ export default function Navbar() {
         >
           <Link
             href="/allquestions"
-            className="hover:opacity-80 transition text-sm"
+            className={`text-sm hover:opacity-80 ${mobileTap}`}
             style={{ color: colors.text }}
           >
             Community Questions
           </Link>
 
-          <Link
+          {/* <Link
             href="/currentaffairs"
             className="hover:opacity-80 transition text-sm"
+            style={{ color: colors.text }}
+          > */}
+          <Link
+            href="/currentaffairs"
+            className={`text-sm hover:opacity-80 ${mobileTap}`}
             style={{ color: colors.text }}
           >
             Current Affairs Quiz
