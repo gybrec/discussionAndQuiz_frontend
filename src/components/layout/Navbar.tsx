@@ -69,13 +69,13 @@ export default function Navbar() {
             className="hover:opacity-80 transition text-sm"
             style={{ color: colors.text }}
           > */}
-          <Link
+          {/* <Link
             href="/currentaffairs"
             className={`text-sm hover:opacity-80 ${mobileTap}`}
             style={{ color: colors.text }}
           >
             Current Affairs Quiz
-          </Link>
+          </Link> */}
         </div>
 
         {/* DESKTOP NAVIGATION (HIDDEN ON MOBILE) */}
@@ -91,13 +91,13 @@ export default function Navbar() {
             Community Questions
           </Link>
 
-          <Link
+          {/* <Link
             href="/currentaffairs"
             className="hover:opacity-80 transition text-sm"
             style={{ color: colors.text }}
           >
             Current Affairs Quiz
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>

@@ -18,7 +18,7 @@ export default function Footer() {
 
         {/* Left Side — Copyright */}
         <p className="text-sm text-neutral-600 dark:text-neutral-400 text-center">
-          © {new Date().getFullYear()} AIQAAN. All rights reserved.
+          © {new Date().getFullYear()} Voactive. All rights reserved.
         </p>
 
         {/* Right Side — Links */}
